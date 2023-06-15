@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		07D49A6B85E00BCA94372B93 /* Pods_taipei_zoo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC123480BF67C70501682F89 /* Pods_taipei_zoo.framework */; };
 		AE73FA392A3B472B00D98446 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE73FA382A3B472B00D98446 /* AppDelegate.swift */; };
 		AE73FA3B2A3B472B00D98446 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE73FA3A2A3B472B00D98446 /* SceneDelegate.swift */; };
 		AE73FA3D2A3B472B00D98446 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE73FA3C2A3B472B00D98446 /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8E099B04F4FC4C31AD026F85 /* Pods-taipei-zoo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-taipei-zoo.release.xcconfig"; path = "Target Support Files/Pods-taipei-zoo/Pods-taipei-zoo.release.xcconfig"; sourceTree = "<group>"; };
 		AE73FA352A3B472B00D98446 /* taipei-zoo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "taipei-zoo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE73FA382A3B472B00D98446 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AE73FA3A2A3B472B00D98446 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +26,8 @@
 		AE73FA412A3B472C00D98446 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AE73FA442A3B472C00D98446 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AE73FA462A3B472C00D98446 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E8482CEB635771E744A186FA /* Pods-taipei-zoo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-taipei-zoo.debug.xcconfig"; path = "Target Support Files/Pods-taipei-zoo/Pods-taipei-zoo.debug.xcconfig"; sourceTree = "<group>"; };
+		FC123480BF67C70501682F89 /* Pods_taipei_zoo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_taipei_zoo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07D49A6B85E00BCA94372B93 /* Pods_taipei_zoo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6228E7DCEA8F40A728C79BC4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E8482CEB635771E744A186FA /* Pods-taipei-zoo.debug.xcconfig */,
+				8E099B04F4FC4C31AD026F85 /* Pods-taipei-zoo.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		9CE5C35C023757183FC21FB5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FC123480BF67C70501682F89 /* Pods_taipei_zoo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		AE73FA2C2A3B472B00D98446 = {
 			isa = PBXGroup;
 			children = (
 				AE73FA372A3B472B00D98446 /* taipei-zoo */,
 				AE73FA362A3B472B00D98446 /* Products */,
+				6228E7DCEA8F40A728C79BC4 /* Pods */,
+				9CE5C35C023757183FC21FB5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AE73FA492A3B472C00D98446 /* Build configuration list for PBXNativeTarget "taipei-zoo" */;
 			buildPhases = (
+				F118190C68D03029B7C9BAC3 /* [CP] Check Pods Manifest.lock */,
 				AE73FA312A3B472B00D98446 /* Sources */,
 				AE73FA322A3B472B00D98446 /* Frameworks */,
 				AE73FA332A3B472B00D98446 /* Resources */,
+				D220D302A401816A5010989F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +159,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D220D302A401816A5010989F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-taipei-zoo/Pods-taipei-zoo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-taipei-zoo/Pods-taipei-zoo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-taipei-zoo/Pods-taipei-zoo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F118190C68D03029B7C9BAC3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-taipei-zoo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		AE73FA312A3B472B00D98446 /* Sources */ = {
@@ -282,6 +351,7 @@
 		};
 		AE73FA4A2A3B472C00D98446 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E8482CEB635771E744A186FA /* Pods-taipei-zoo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -310,6 +380,7 @@
 		};
 		AE73FA4B2A3B472C00D98446 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8E099B04F4FC4C31AD026F85 /* Pods-taipei-zoo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
