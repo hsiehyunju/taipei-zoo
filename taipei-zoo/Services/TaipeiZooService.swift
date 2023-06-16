@@ -7,6 +7,7 @@
 
 import Foundation
 import RxSwift
+import RxCocoa
 
 class TaipeiZooService {
     
@@ -71,7 +72,7 @@ class TaipeiZooService {
                     let limit = model.result.limit
                     let offset = model.result.offset
                     
-                    if ((limit + offset) < model.result.count) {
+                    if ((limit + offset) <= model.result.count) {
                         self.fetchPlantData(offset: limit + offset)
                     }
                 } catch let error {
