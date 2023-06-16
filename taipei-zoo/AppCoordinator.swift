@@ -21,6 +21,17 @@ class AppCoordinator {
     }
     
     func start() {
+        toAreaPage()
+    }
+    
+    func toAreaPage() {
+        
+        DispatchQueue.main.async {
+            // 實例化 Login View Controller
+            let areaViewController = self.storyboard.instantiateViewController(withIdentifier: "AreaViewController") as! AreaViewController
+            
+            self.navigationController.pushViewController(areaViewController, animated: true)
+        }
         
     }
     
