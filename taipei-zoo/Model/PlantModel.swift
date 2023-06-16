@@ -25,7 +25,7 @@ struct PlantModel: Codable {
 
     enum CodingKeys: String, CodingKey {
         case id = "_id"
-        case fNameCh = "\u{feff}F_Name_Ch"
+        case fNameCh = "F_Name_Ch"
         case fSummary = "F_Summary"
         case fKeywords = "F_Keywords"
         case fAlsoKnown = "F_AlsoKnown"
