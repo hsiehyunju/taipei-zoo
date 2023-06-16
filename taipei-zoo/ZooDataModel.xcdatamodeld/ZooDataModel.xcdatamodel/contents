@@ -9,4 +9,8 @@
         <attribute name="picURL" optional="YES" attributeType="String"/>
         <attribute name="url" optional="YES" attributeType="String"/>
     </entity>
+    <entity name="PlantEntity" representedClassName="PlantEntity" syncable="YES" codeGenerationType="class">
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="nid" optional="YES" attributeType="String"/>
+    </entity>
 </model>
