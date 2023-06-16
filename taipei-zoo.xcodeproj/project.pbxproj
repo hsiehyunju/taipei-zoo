@@ -7,146 +7,115 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		07D49A6B85E00BCA94372B93 /* Pods_taipei_zoo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC123480BF67C70501682F89 /* Pods_taipei_zoo.framework */; };
-		AE73FA392A3B472B00D98446 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE73FA382A3B472B00D98446 /* AppDelegate.swift */; };
-		AE73FA3D2A3B472B00D98446 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE73FA3C2A3B472B00D98446 /* ViewController.swift */; };
-		AE73FA402A3B472B00D98446 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE73FA3E2A3B472B00D98446 /* Main.storyboard */; };
-		AE73FA422A3B472C00D98446 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE73FA412A3B472C00D98446 /* Assets.xcassets */; };
-		AE73FA452A3B472C00D98446 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE73FA432A3B472C00D98446 /* LaunchScreen.storyboard */; };
-		AE73FA512A3B526600D98446 /* AreaResultModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE73FA502A3B526600D98446 /* AreaResultModel.swift */; };
-		AE73FA532A3B53C200D98446 /* AreaModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE73FA522A3B53C200D98446 /* AreaModel.swift */; };
-		C11A8D612A3BF0AB0014AF8C /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11A8D602A3BF0AB0014AF8C /* AppCoordinator.swift */; };
-		C11A8D682A3C13450014AF8C /* ZooDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C11A8D662A3C13450014AF8C /* ZooDataModel.xcdatamodeld */; };
-		C11A8D722A3C2B5B0014AF8C /* TaipeiZooService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11A8D712A3C2B5B0014AF8C /* TaipeiZooService.swift */; };
-		C11A8D742A3C2E9F0014AF8C /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11A8D732A3C2E9F0014AF8C /* CoreDataManager.swift */; };
-		C11A8D762A3C44B00014AF8C /* PlantResultModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11A8D752A3C44B00014AF8C /* PlantResultModel.swift */; };
-		C11A8D782A3C44D40014AF8C /* PlantModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11A8D772A3C44D40014AF8C /* PlantModel.swift */; };
+		9863DEFE59B1717EF9F3BABB /* Pods_taipei_zoo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28F28F62972D890BD88B2575 /* Pods_taipei_zoo.framework */; };
+		AE73FAAC2A3C80D500D98446 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE73FAAB2A3C80D500D98446 /* AppDelegate.swift */; };
+		AE73FAB02A3C80D500D98446 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE73FAAF2A3C80D500D98446 /* ViewController.swift */; };
+		AE73FAB32A3C80D500D98446 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE73FAB12A3C80D500D98446 /* Main.storyboard */; };
+		AE73FAB52A3C80D600D98446 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE73FAB42A3C80D600D98446 /* Assets.xcassets */; };
+		AE73FAB82A3C80D600D98446 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE73FAB62A3C80D600D98446 /* LaunchScreen.storyboard */; };
+		AE73FAC02A3C813700D98446 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE73FABF2A3C813700D98446 /* AppCoordinator.swift */; };
+		AE73FAC22A3C814A00D98446 /* Services in Resources */ = {isa = PBXBuildFile; fileRef = AE73FAC12A3C814A00D98446 /* Services */; };
+		AE73FAC42A3C814F00D98446 /* Model in Resources */ = {isa = PBXBuildFile; fileRef = AE73FAC32A3C814F00D98446 /* Model */; };
+		AE73FAC62A3C815400D98446 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE73FAC52A3C815400D98446 /* CoreDataManager.swift */; };
+		AE73FACC2A3C81CE00D98446 /* ZooDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AE73FACA2A3C81CE00D98446 /* ZooDataModel.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		8E099B04F4FC4C31AD026F85 /* Pods-taipei-zoo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-taipei-zoo.release.xcconfig"; path = "Target Support Files/Pods-taipei-zoo/Pods-taipei-zoo.release.xcconfig"; sourceTree = "<group>"; };
-		AE73FA352A3B472B00D98446 /* taipei-zoo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "taipei-zoo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		AE73FA382A3B472B00D98446 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AE73FA3C2A3B472B00D98446 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		AE73FA3F2A3B472B00D98446 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		AE73FA412A3B472C00D98446 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		AE73FA442A3B472C00D98446 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		AE73FA462A3B472C00D98446 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AE73FA502A3B526600D98446 /* AreaResultModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AreaResultModel.swift; sourceTree = "<group>"; };
-		AE73FA522A3B53C200D98446 /* AreaModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AreaModel.swift; sourceTree = "<group>"; };
-		C11A8D602A3BF0AB0014AF8C /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
-		C11A8D672A3C13450014AF8C /* ZooDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ZooDataModel.xcdatamodel; sourceTree = "<group>"; };
-		C11A8D712A3C2B5B0014AF8C /* TaipeiZooService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaipeiZooService.swift; sourceTree = "<group>"; };
-		C11A8D732A3C2E9F0014AF8C /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
-		C11A8D752A3C44B00014AF8C /* PlantResultModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantResultModel.swift; sourceTree = "<group>"; };
-		C11A8D772A3C44D40014AF8C /* PlantModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantModel.swift; sourceTree = "<group>"; };
-		E8482CEB635771E744A186FA /* Pods-taipei-zoo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-taipei-zoo.debug.xcconfig"; path = "Target Support Files/Pods-taipei-zoo/Pods-taipei-zoo.debug.xcconfig"; sourceTree = "<group>"; };
-		FC123480BF67C70501682F89 /* Pods_taipei_zoo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_taipei_zoo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		28F28F62972D890BD88B2575 /* Pods_taipei_zoo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_taipei_zoo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		325DF9E31E4C609FB399D2F0 /* Pods-taipei-zoo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-taipei-zoo.debug.xcconfig"; path = "Target Support Files/Pods-taipei-zoo/Pods-taipei-zoo.debug.xcconfig"; sourceTree = "<group>"; };
+		44AB1EDE5EEDCECD9DA0EC02 /* Pods-taipei-zoo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-taipei-zoo.release.xcconfig"; path = "Target Support Files/Pods-taipei-zoo/Pods-taipei-zoo.release.xcconfig"; sourceTree = "<group>"; };
+		AE73FAA82A3C80D500D98446 /* taipei-zoo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "taipei-zoo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE73FAAB2A3C80D500D98446 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AE73FAAF2A3C80D500D98446 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AE73FAB22A3C80D500D98446 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AE73FAB42A3C80D600D98446 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AE73FAB72A3C80D600D98446 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AE73FAB92A3C80D600D98446 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE73FABF2A3C813700D98446 /* AppCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		AE73FAC12A3C814A00D98446 /* Services */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Services; sourceTree = "<group>"; };
+		AE73FAC32A3C814F00D98446 /* Model */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Model; sourceTree = "<group>"; };
+		AE73FAC52A3C815400D98446 /* CoreDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		AE73FACB2A3C81CE00D98446 /* ZooDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ZooDataModel.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		AE73FA322A3B472B00D98446 /* Frameworks */ = {
+		AE73FAA52A3C80D500D98446 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				07D49A6B85E00BCA94372B93 /* Pods_taipei_zoo.framework in Frameworks */,
+				9863DEFE59B1717EF9F3BABB /* Pods_taipei_zoo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		6228E7DCEA8F40A728C79BC4 /* Pods */ = {
+		A3EF82618B7B5DE5F79F9E9F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				E8482CEB635771E744A186FA /* Pods-taipei-zoo.debug.xcconfig */,
-				8E099B04F4FC4C31AD026F85 /* Pods-taipei-zoo.release.xcconfig */,
-			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
-		9CE5C35C023757183FC21FB5 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				FC123480BF67C70501682F89 /* Pods_taipei_zoo.framework */,
+				28F28F62972D890BD88B2575 /* Pods_taipei_zoo.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		AE73FA2C2A3B472B00D98446 = {
+		AE73FA9F2A3C80D500D98446 = {
 			isa = PBXGroup;
 			children = (
-				C11A8D662A3C13450014AF8C /* ZooDataModel.xcdatamodeld */,
-				AE73FA372A3B472B00D98446 /* taipei-zoo */,
-				AE73FA362A3B472B00D98446 /* Products */,
-				6228E7DCEA8F40A728C79BC4 /* Pods */,
-				9CE5C35C023757183FC21FB5 /* Frameworks */,
+				AE73FAAA2A3C80D500D98446 /* taipei-zoo */,
+				AE73FAA92A3C80D500D98446 /* Products */,
+				DA2BF9E0E53C28006DE834A6 /* Pods */,
+				A3EF82618B7B5DE5F79F9E9F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
-		AE73FA362A3B472B00D98446 /* Products */ = {
+		AE73FAA92A3C80D500D98446 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				AE73FA352A3B472B00D98446 /* taipei-zoo.app */,
+				AE73FAA82A3C80D500D98446 /* taipei-zoo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		AE73FA372A3B472B00D98446 /* taipei-zoo */ = {
+		AE73FAAA2A3C80D500D98446 /* taipei-zoo */ = {
 			isa = PBXGroup;
 			children = (
-				C11A8D702A3C2B490014AF8C /* Services */,
-				AE73FA4F2A3B522A00D98446 /* Model */,
-				AE73FA382A3B472B00D98446 /* AppDelegate.swift */,
-				AE73FA3C2A3B472B00D98446 /* ViewController.swift */,
-				AE73FA3E2A3B472B00D98446 /* Main.storyboard */,
-				AE73FA412A3B472C00D98446 /* Assets.xcassets */,
-				AE73FA432A3B472C00D98446 /* LaunchScreen.storyboard */,
-				AE73FA462A3B472C00D98446 /* Info.plist */,
-				C11A8D602A3BF0AB0014AF8C /* AppCoordinator.swift */,
-				C11A8D732A3C2E9F0014AF8C /* CoreDataManager.swift */,
+				AE73FAC52A3C815400D98446 /* CoreDataManager.swift */,
+				AE73FAC32A3C814F00D98446 /* Model */,
+				AE73FAC12A3C814A00D98446 /* Services */,
+				AE73FABF2A3C813700D98446 /* AppCoordinator.swift */,
+				AE73FAAB2A3C80D500D98446 /* AppDelegate.swift */,
+				AE73FAAF2A3C80D500D98446 /* ViewController.swift */,
+				AE73FAB12A3C80D500D98446 /* Main.storyboard */,
+				AE73FAB42A3C80D600D98446 /* Assets.xcassets */,
+				AE73FAB62A3C80D600D98446 /* LaunchScreen.storyboard */,
+				AE73FAB92A3C80D600D98446 /* Info.plist */,
+				AE73FACA2A3C81CE00D98446 /* ZooDataModel.xcdatamodeld */,
 			);
 			path = "taipei-zoo";
 			sourceTree = "<group>";
 		};
-		AE73FA4F2A3B522A00D98446 /* Model */ = {
+		DA2BF9E0E53C28006DE834A6 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				AE73FA502A3B526600D98446 /* AreaResultModel.swift */,
-				AE73FA522A3B53C200D98446 /* AreaModel.swift */,
-				C11A8D752A3C44B00014AF8C /* PlantResultModel.swift */,
-				C11A8D772A3C44D40014AF8C /* PlantModel.swift */,
+				325DF9E31E4C609FB399D2F0 /* Pods-taipei-zoo.debug.xcconfig */,
+				44AB1EDE5EEDCECD9DA0EC02 /* Pods-taipei-zoo.release.xcconfig */,
 			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		AE73FA4F2A3B522A00D98446 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				AE73FA502A3B526600D98446 /* AreaResultModel.swift */,
-				AE73FA522A3B53C200D98446 /* AreaModel.swift */,
-			);
-			path = Model;
-		C11A8D702A3C2B490014AF8C /* Services */ = {
-			isa = PBXGroup;
-			children = (
-				C11A8D712A3C2B5B0014AF8C /* TaipeiZooService.swift */,
-			);
-			path = Services;
+			name = Pods;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		AE73FA342A3B472B00D98446 /* taipei-zoo */ = {
+		AE73FAA72A3C80D500D98446 /* taipei-zoo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AE73FA492A3B472C00D98446 /* Build configuration list for PBXNativeTarget "taipei-zoo" */;
+			buildConfigurationList = AE73FABC2A3C80D600D98446 /* Build configuration list for PBXNativeTarget "taipei-zoo" */;
 			buildPhases = (
-				F118190C68D03029B7C9BAC3 /* [CP] Check Pods Manifest.lock */,
-				AE73FA312A3B472B00D98446 /* Sources */,
-				AE73FA322A3B472B00D98446 /* Frameworks */,
-				AE73FA332A3B472B00D98446 /* Resources */,
-				D220D302A401816A5010989F /* [CP] Embed Pods Frameworks */,
+				8C3882AD8F6164335213142E /* [CP] Check Pods Manifest.lock */,
+				AE73FAA42A3C80D500D98446 /* Sources */,
+				AE73FAA52A3C80D500D98446 /* Frameworks */,
+				AE73FAA62A3C80D500D98446 /* Resources */,
+				07E89214496262A5A9B9F21B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -154,25 +123,25 @@
 			);
 			name = "taipei-zoo";
 			productName = "taipei-zoo";
-			productReference = AE73FA352A3B472B00D98446 /* taipei-zoo.app */;
+			productReference = AE73FAA82A3C80D500D98446 /* taipei-zoo.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		AE73FA2D2A3B472B00D98446 /* Project object */ = {
+		AE73FAA02A3C80D500D98446 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1430;
 				LastUpgradeCheck = 1430;
 				TargetAttributes = {
-					AE73FA342A3B472B00D98446 = {
+					AE73FAA72A3C80D500D98446 = {
 						CreatedOnToolsVersion = 14.3.1;
 					};
 				};
 			};
-			buildConfigurationList = AE73FA302A3B472B00D98446 /* Build configuration list for PBXProject "taipei-zoo" */;
+			buildConfigurationList = AE73FAA32A3C80D500D98446 /* Build configuration list for PBXProject "taipei-zoo" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -180,31 +149,33 @@
 				en,
 				Base,
 			);
-			mainGroup = AE73FA2C2A3B472B00D98446;
-			productRefGroup = AE73FA362A3B472B00D98446 /* Products */;
+			mainGroup = AE73FA9F2A3C80D500D98446;
+			productRefGroup = AE73FAA92A3C80D500D98446 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				AE73FA342A3B472B00D98446 /* taipei-zoo */,
+				AE73FAA72A3C80D500D98446 /* taipei-zoo */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		AE73FA332A3B472B00D98446 /* Resources */ = {
+		AE73FAA62A3C80D500D98446 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AE73FA452A3B472C00D98446 /* LaunchScreen.storyboard in Resources */,
-				AE73FA422A3B472C00D98446 /* Assets.xcassets in Resources */,
-				AE73FA402A3B472B00D98446 /* Main.storyboard in Resources */,
+				AE73FAC42A3C814F00D98446 /* Model in Resources */,
+				AE73FAC22A3C814A00D98446 /* Services in Resources */,
+				AE73FAB82A3C80D600D98446 /* LaunchScreen.storyboard in Resources */,
+				AE73FAB52A3C80D600D98446 /* Assets.xcassets in Resources */,
+				AE73FAB32A3C80D500D98446 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		D220D302A401816A5010989F /* [CP] Embed Pods Frameworks */ = {
+		07E89214496262A5A9B9F21B /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -221,7 +192,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-taipei-zoo/Pods-taipei-zoo-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		F118190C68D03029B7C9BAC3 /* [CP] Check Pods Manifest.lock */ = {
+		8C3882AD8F6164335213142E /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -246,38 +217,33 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		AE73FA312A3B472B00D98446 /* Sources */ = {
+		AE73FAA42A3C80D500D98446 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C11A8D682A3C13450014AF8C /* ZooDataModel.xcdatamodeld in Sources */,
-				C11A8D612A3BF0AB0014AF8C /* AppCoordinator.swift in Sources */,
-				AE73FA532A3B53C200D98446 /* AreaModel.swift in Sources */,
-				AE73FA3D2A3B472B00D98446 /* ViewController.swift in Sources */,
-				C11A8D782A3C44D40014AF8C /* PlantModel.swift in Sources */,
-				C11A8D722A3C2B5B0014AF8C /* TaipeiZooService.swift in Sources */,
-				C11A8D742A3C2E9F0014AF8C /* CoreDataManager.swift in Sources */,
-				AE73FA512A3B526600D98446 /* AreaResultModel.swift in Sources */,
-				C11A8D762A3C44B00014AF8C /* PlantResultModel.swift in Sources */,
-				AE73FA392A3B472B00D98446 /* AppDelegate.swift in Sources */,
+				AE73FAC02A3C813700D98446 /* AppCoordinator.swift in Sources */,
+				AE73FAB02A3C80D500D98446 /* ViewController.swift in Sources */,
+				AE73FAC62A3C815400D98446 /* CoreDataManager.swift in Sources */,
+				AE73FACC2A3C81CE00D98446 /* ZooDataModel.xcdatamodeld in Sources */,
+				AE73FAAC2A3C80D500D98446 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		AE73FA3E2A3B472B00D98446 /* Main.storyboard */ = {
+		AE73FAB12A3C80D500D98446 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				AE73FA3F2A3B472B00D98446 /* Base */,
+				AE73FAB22A3C80D500D98446 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		AE73FA432A3B472C00D98446 /* LaunchScreen.storyboard */ = {
+		AE73FAB62A3C80D600D98446 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				AE73FA442A3B472C00D98446 /* Base */,
+				AE73FAB72A3C80D600D98446 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -285,7 +251,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		AE73FA472A3B472C00D98446 /* Debug */ = {
+		AE73FABA2A3C80D600D98446 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -345,7 +311,7 @@
 			};
 			name = Debug;
 		};
-		AE73FA482A3B472C00D98446 /* Release */ = {
+		AE73FABB2A3C80D600D98446 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -399,9 +365,9 @@
 			};
 			name = Release;
 		};
-		AE73FA4A2A3B472C00D98446 /* Debug */ = {
+		AE73FABD2A3C80D600D98446 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E8482CEB635771E744A186FA /* Pods-taipei-zoo.debug.xcconfig */;
+			baseConfigurationReference = 325DF9E31E4C609FB399D2F0 /* Pods-taipei-zoo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -413,8 +379,9 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -428,9 +395,9 @@
 			};
 			name = Debug;
 		};
-		AE73FA4B2A3B472C00D98446 /* Release */ = {
+		AE73FABE2A3C80D600D98446 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8E099B04F4FC4C31AD026F85 /* Pods-taipei-zoo.release.xcconfig */;
+			baseConfigurationReference = 44AB1EDE5EEDCECD9DA0EC02 /* Pods-taipei-zoo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -442,8 +409,9 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -460,20 +428,20 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		AE73FA302A3B472B00D98446 /* Build configuration list for PBXProject "taipei-zoo" */ = {
+		AE73FAA32A3C80D500D98446 /* Build configuration list for PBXProject "taipei-zoo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				AE73FA472A3B472C00D98446 /* Debug */,
-				AE73FA482A3B472C00D98446 /* Release */,
+				AE73FABA2A3C80D600D98446 /* Debug */,
+				AE73FABB2A3C80D600D98446 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AE73FA492A3B472C00D98446 /* Build configuration list for PBXNativeTarget "taipei-zoo" */ = {
+		AE73FABC2A3C80D600D98446 /* Build configuration list for PBXNativeTarget "taipei-zoo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				AE73FA4A2A3B472C00D98446 /* Debug */,
-				AE73FA4B2A3B472C00D98446 /* Release */,
+				AE73FABD2A3C80D600D98446 /* Debug */,
+				AE73FABE2A3C80D600D98446 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -481,17 +449,17 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		C11A8D662A3C13450014AF8C /* ZooDataModel.xcdatamodeld */ = {
+		AE73FACA2A3C81CE00D98446 /* ZooDataModel.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				C11A8D672A3C13450014AF8C /* ZooDataModel.xcdatamodel */,
+				AE73FACB2A3C81CE00D98446 /* ZooDataModel.xcdatamodel */,
 			);
-			currentVersion = C11A8D672A3C13450014AF8C /* ZooDataModel.xcdatamodel */;
+			currentVersion = AE73FACB2A3C81CE00D98446 /* ZooDataModel.xcdatamodel */;
 			path = ZooDataModel.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
 /* End XCVersionGroup section */
 	};
-	rootObject = AE73FA2D2A3B472B00D98446 /* Project object */;
+	rootObject = AE73FAA02A3C80D500D98446 /* Project object */;
 }
