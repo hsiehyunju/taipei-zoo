@@ -25,6 +25,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window!.rootViewController = navigationController
         window!.makeKeyAndVisible()
         
+        TaipeiZooService.shared.getAreaData { result in
+            do {
+                let item = try result.get()
+                CoreDataManager.shared.saveAreaToCoreData(areaArray: item.result.results)
+            } catch {
+            }
+        }
+        
+        TaipeiZooService.shared.fetchPlantData(offset: 0)
+
         return true
     }
     
