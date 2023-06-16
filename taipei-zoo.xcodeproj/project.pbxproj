@@ -14,10 +14,13 @@
 		AE73FAB52A3C80D600D98446 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE73FAB42A3C80D600D98446 /* Assets.xcassets */; };
 		AE73FAB82A3C80D600D98446 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE73FAB62A3C80D600D98446 /* LaunchScreen.storyboard */; };
 		AE73FAC02A3C813700D98446 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE73FABF2A3C813700D98446 /* AppCoordinator.swift */; };
-		AE73FAC22A3C814A00D98446 /* Services in Resources */ = {isa = PBXBuildFile; fileRef = AE73FAC12A3C814A00D98446 /* Services */; };
-		AE73FAC42A3C814F00D98446 /* Model in Resources */ = {isa = PBXBuildFile; fileRef = AE73FAC32A3C814F00D98446 /* Model */; };
 		AE73FAC62A3C815400D98446 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE73FAC52A3C815400D98446 /* CoreDataManager.swift */; };
 		AE73FACC2A3C81CE00D98446 /* ZooDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AE73FACA2A3C81CE00D98446 /* ZooDataModel.xcdatamodeld */; };
+		AE73FAD32A3C83B100D98446 /* AreaResultModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE73FACF2A3C83B100D98446 /* AreaResultModel.swift */; };
+		AE73FAD42A3C83B100D98446 /* PlantModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE73FAD02A3C83B100D98446 /* PlantModel.swift */; };
+		AE73FAD52A3C83B100D98446 /* PlantResultModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE73FAD12A3C83B100D98446 /* PlantResultModel.swift */; };
+		AE73FAD62A3C83B100D98446 /* AreaModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE73FAD22A3C83B100D98446 /* AreaModel.swift */; };
+		AE73FAD82A3C83B600D98446 /* TaipeiZooService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE73FAD72A3C83B600D98446 /* TaipeiZooService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,10 +35,13 @@
 		AE73FAB72A3C80D600D98446 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AE73FAB92A3C80D600D98446 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AE73FABF2A3C813700D98446 /* AppCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
-		AE73FAC12A3C814A00D98446 /* Services */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Services; sourceTree = "<group>"; };
-		AE73FAC32A3C814F00D98446 /* Model */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Model; sourceTree = "<group>"; };
 		AE73FAC52A3C815400D98446 /* CoreDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 		AE73FACB2A3C81CE00D98446 /* ZooDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ZooDataModel.xcdatamodel; sourceTree = "<group>"; };
+		AE73FACF2A3C83B100D98446 /* AreaResultModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AreaResultModel.swift; sourceTree = "<group>"; };
+		AE73FAD02A3C83B100D98446 /* PlantModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlantModel.swift; sourceTree = "<group>"; };
+		AE73FAD12A3C83B100D98446 /* PlantResultModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlantResultModel.swift; sourceTree = "<group>"; };
+		AE73FAD22A3C83B100D98446 /* AreaModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AreaModel.swift; sourceTree = "<group>"; };
+		AE73FAD72A3C83B600D98446 /* TaipeiZooService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaipeiZooService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,9 +85,9 @@
 		AE73FAAA2A3C80D500D98446 /* taipei-zoo */ = {
 			isa = PBXGroup;
 			children = (
+				AE73FACE2A3C839600D98446 /* Services */,
+				AE73FACD2A3C838E00D98446 /* Model */,
 				AE73FAC52A3C815400D98446 /* CoreDataManager.swift */,
-				AE73FAC32A3C814F00D98446 /* Model */,
-				AE73FAC12A3C814A00D98446 /* Services */,
 				AE73FABF2A3C813700D98446 /* AppCoordinator.swift */,
 				AE73FAAB2A3C80D500D98446 /* AppDelegate.swift */,
 				AE73FAAF2A3C80D500D98446 /* ViewController.swift */,
@@ -94,13 +100,31 @@
 			path = "taipei-zoo";
 			sourceTree = "<group>";
 		};
+		AE73FACD2A3C838E00D98446 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AE73FAD22A3C83B100D98446 /* AreaModel.swift */,
+				AE73FACF2A3C83B100D98446 /* AreaResultModel.swift */,
+				AE73FAD02A3C83B100D98446 /* PlantModel.swift */,
+				AE73FAD12A3C83B100D98446 /* PlantResultModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AE73FACE2A3C839600D98446 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				AE73FAD72A3C83B600D98446 /* TaipeiZooService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		DA2BF9E0E53C28006DE834A6 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
 				325DF9E31E4C609FB399D2F0 /* Pods-taipei-zoo.debug.xcconfig */,
 				44AB1EDE5EEDCECD9DA0EC02 /* Pods-taipei-zoo.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -164,8 +188,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AE73FAC42A3C814F00D98446 /* Model in Resources */,
-				AE73FAC22A3C814A00D98446 /* Services in Resources */,
 				AE73FAB82A3C80D600D98446 /* LaunchScreen.storyboard in Resources */,
 				AE73FAB52A3C80D600D98446 /* Assets.xcassets in Resources */,
 				AE73FAB32A3C80D500D98446 /* Main.storyboard in Resources */,
@@ -221,11 +243,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE73FAD52A3C83B100D98446 /* PlantResultModel.swift in Sources */,
 				AE73FAC02A3C813700D98446 /* AppCoordinator.swift in Sources */,
 				AE73FAB02A3C80D500D98446 /* ViewController.swift in Sources */,
+				AE73FAD42A3C83B100D98446 /* PlantModel.swift in Sources */,
 				AE73FAC62A3C815400D98446 /* CoreDataManager.swift in Sources */,
 				AE73FACC2A3C81CE00D98446 /* ZooDataModel.xcdatamodeld in Sources */,
+				AE73FAD82A3C83B600D98446 /* TaipeiZooService.swift in Sources */,
+				AE73FAD62A3C83B100D98446 /* AreaModel.swift in Sources */,
 				AE73FAAC2A3C80D500D98446 /* AppDelegate.swift in Sources */,
+				AE73FAD32A3C83B100D98446 /* AreaResultModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
