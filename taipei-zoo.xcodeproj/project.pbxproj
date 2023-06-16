@@ -15,6 +15,7 @@
 		AE73FA452A3B472C00D98446 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE73FA432A3B472C00D98446 /* LaunchScreen.storyboard */; };
 		AE73FA512A3B526600D98446 /* AreaResultModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE73FA502A3B526600D98446 /* AreaResultModel.swift */; };
 		AE73FA532A3B53C200D98446 /* AreaModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE73FA522A3B53C200D98446 /* AreaModel.swift */; };
+		C11A8D612A3BF0AB0014AF8C /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11A8D602A3BF0AB0014AF8C /* AppCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		AE73FA462A3B472C00D98446 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AE73FA502A3B526600D98446 /* AreaResultModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AreaResultModel.swift; sourceTree = "<group>"; };
 		AE73FA522A3B53C200D98446 /* AreaModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AreaModel.swift; sourceTree = "<group>"; };
+		C11A8D602A3BF0AB0014AF8C /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		E8482CEB635771E744A186FA /* Pods-taipei-zoo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-taipei-zoo.debug.xcconfig"; path = "Target Support Files/Pods-taipei-zoo/Pods-taipei-zoo.debug.xcconfig"; sourceTree = "<group>"; };
 		FC123480BF67C70501682F89 /* Pods_taipei_zoo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_taipei_zoo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -90,6 +92,7 @@
 				AE73FA412A3B472C00D98446 /* Assets.xcassets */,
 				AE73FA432A3B472C00D98446 /* LaunchScreen.storyboard */,
 				AE73FA462A3B472C00D98446 /* Info.plist */,
+				C11A8D602A3BF0AB0014AF8C /* AppCoordinator.swift */,
 			);
 			path = "taipei-zoo";
 			sourceTree = "<group>";
@@ -225,6 +228,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C11A8D612A3BF0AB0014AF8C /* AppCoordinator.swift in Sources */,
 				AE73FA532A3B53C200D98446 /* AreaModel.swift in Sources */,
 				AE73FA3D2A3B472B00D98446 /* ViewController.swift in Sources */,
 				AE73FA512A3B526600D98446 /* AreaResultModel.swift in Sources */,
