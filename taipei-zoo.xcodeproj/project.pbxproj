@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		9863DEFE59B1717EF9F3BABB /* Pods_taipei_zoo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28F28F62972D890BD88B2575 /* Pods_taipei_zoo.framework */; };
 		AE73FAAC2A3C80D500D98446 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE73FAAB2A3C80D500D98446 /* AppDelegate.swift */; };
-		AE73FAB02A3C80D500D98446 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE73FAAF2A3C80D500D98446 /* ViewController.swift */; };
+		AE73FAB02A3C80D500D98446 /* AreaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE73FAAF2A3C80D500D98446 /* AreaViewController.swift */; };
 		AE73FAB32A3C80D500D98446 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE73FAB12A3C80D500D98446 /* Main.storyboard */; };
 		AE73FAB52A3C80D600D98446 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE73FAB42A3C80D600D98446 /* Assets.xcassets */; };
 		AE73FAB82A3C80D600D98446 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE73FAB62A3C80D600D98446 /* LaunchScreen.storyboard */; };
@@ -21,6 +21,7 @@
 		AE73FAD52A3C83B100D98446 /* PlantResultModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE73FAD12A3C83B100D98446 /* PlantResultModel.swift */; };
 		AE73FAD62A3C83B100D98446 /* AreaModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE73FAD22A3C83B100D98446 /* AreaModel.swift */; };
 		AE73FAD82A3C83B600D98446 /* TaipeiZooService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE73FAD72A3C83B600D98446 /* TaipeiZooService.swift */; };
+		AE73FADC2A3C92B600D98446 /* AreaViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE73FADB2A3C92B600D98446 /* AreaViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,7 +30,7 @@
 		44AB1EDE5EEDCECD9DA0EC02 /* Pods-taipei-zoo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-taipei-zoo.release.xcconfig"; path = "Target Support Files/Pods-taipei-zoo/Pods-taipei-zoo.release.xcconfig"; sourceTree = "<group>"; };
 		AE73FAA82A3C80D500D98446 /* taipei-zoo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "taipei-zoo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE73FAAB2A3C80D500D98446 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AE73FAAF2A3C80D500D98446 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AE73FAAF2A3C80D500D98446 /* AreaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AreaViewController.swift; sourceTree = "<group>"; };
 		AE73FAB22A3C80D500D98446 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AE73FAB42A3C80D600D98446 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AE73FAB72A3C80D600D98446 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -42,6 +43,7 @@
 		AE73FAD12A3C83B100D98446 /* PlantResultModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlantResultModel.swift; sourceTree = "<group>"; };
 		AE73FAD22A3C83B100D98446 /* AreaModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AreaModel.swift; sourceTree = "<group>"; };
 		AE73FAD72A3C83B600D98446 /* TaipeiZooService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaipeiZooService.swift; sourceTree = "<group>"; };
+		AE73FADB2A3C92B600D98446 /* AreaViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AreaViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,12 +87,13 @@
 		AE73FAAA2A3C80D500D98446 /* taipei-zoo */ = {
 			isa = PBXGroup;
 			children = (
+				AE73FADA2A3C92A900D98446 /* ViewModel */,
+				AE73FAD92A3C905900D98446 /* ViewController */,
 				AE73FACE2A3C839600D98446 /* Services */,
 				AE73FACD2A3C838E00D98446 /* Model */,
 				AE73FAC52A3C815400D98446 /* CoreDataManager.swift */,
 				AE73FABF2A3C813700D98446 /* AppCoordinator.swift */,
 				AE73FAAB2A3C80D500D98446 /* AppDelegate.swift */,
-				AE73FAAF2A3C80D500D98446 /* ViewController.swift */,
 				AE73FAB12A3C80D500D98446 /* Main.storyboard */,
 				AE73FAB42A3C80D600D98446 /* Assets.xcassets */,
 				AE73FAB62A3C80D600D98446 /* LaunchScreen.storyboard */,
@@ -117,6 +120,22 @@
 				AE73FAD72A3C83B600D98446 /* TaipeiZooService.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		AE73FAD92A3C905900D98446 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				AE73FAAF2A3C80D500D98446 /* AreaViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		AE73FADA2A3C92A900D98446 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				AE73FADB2A3C92B600D98446 /* AreaViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		DA2BF9E0E53C28006DE834A6 /* Pods */ = {
@@ -245,10 +264,11 @@
 			files = (
 				AE73FAD52A3C83B100D98446 /* PlantResultModel.swift in Sources */,
 				AE73FAC02A3C813700D98446 /* AppCoordinator.swift in Sources */,
-				AE73FAB02A3C80D500D98446 /* ViewController.swift in Sources */,
+				AE73FAB02A3C80D500D98446 /* AreaViewController.swift in Sources */,
 				AE73FAD42A3C83B100D98446 /* PlantModel.swift in Sources */,
 				AE73FAC62A3C815400D98446 /* CoreDataManager.swift in Sources */,
 				AE73FACC2A3C81CE00D98446 /* ZooDataModel.xcdatamodeld in Sources */,
+				AE73FADC2A3C92B600D98446 /* AreaViewModel.swift in Sources */,
 				AE73FAD82A3C83B600D98446 /* TaipeiZooService.swift in Sources */,
 				AE73FAD62A3C83B100D98446 /* AreaModel.swift in Sources */,
 				AE73FAAC2A3C80D500D98446 /* AppDelegate.swift in Sources */,
