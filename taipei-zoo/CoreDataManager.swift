@@ -61,31 +61,26 @@ class CoreDataManager {
         }
     }
     
-    func savePlantToCoreData(areaArray: [PlantModel]) {
+    func savePlantToCoreData(plantArray: [PlantModel]) {
         
         let context = persistentContainer.viewContext
         context.perform {
-            for area in areaArray {
+            for plant in plantArray {
                 
                 // 創建一個 Fetch Request，用於檢查資料是否已存在
-                let fetchRequest: NSFetchRequest<AreaEntity> = AreaEntity.fetchRequest()
+                let fetchRequest: NSFetchRequest<PlantEntity> = PlantEntity.fetchRequest()
                 // 根據 name 判斷是否已存在
-                fetchRequest.predicate = NSPredicate(format: "name == %@", area.name)
+                fetchRequest.predicate = NSPredicate(format: "name == %@", plant.fNameCh)
                 
                 do {
                     let items = try context.fetch(fetchRequest)
                     
                     if let item = items.first {
-                        print("資料已存在：\(item.name!)")
+                        print("資料已存在：\(item.name) - \(item.nid)")
                     } else {
-                        let areaEntity = AreaEntity(context: context)
-                        areaEntity.nid = String(area.no)
-                        areaEntity.category = area.category
-                        areaEntity.info = area.info
-                        areaEntity.name = area.name
-                        areaEntity.no = area.no
-                        areaEntity.picURL = area.picURL
-                        areaEntity.url = area.URL
+                        let plantEntity = PlantEntity(context: context)
+                        plantEntity.nid = String(plant.id)
+                        plantEntity.name = plant.fNameCh
                     }
                 } catch let error {
                     fatalError("無法檢查或儲存資料：\(error)")
