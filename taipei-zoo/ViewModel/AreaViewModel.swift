@@ -10,9 +10,7 @@ import RxSwift
 import RxCocoa
 import CoreData
 
-class AreaViewModel: NSObject {
-    
-    private var disposeBag = DisposeBag()
+class AreaViewModel: BaseViewModel {
     
     let dataChangesSubject = PublishSubject<Void>()
     var items = PublishSubject<[AreaModel]>()
