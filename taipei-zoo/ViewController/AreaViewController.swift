@@ -13,7 +13,7 @@ class AreaViewController: UIViewController {
     
     @IBOutlet var areaTableView: UITableView!
     
-    private var viewModel = AreaViewModel()
+    var viewModel: AreaViewModel!
     private var disposeBag = DisposeBag()
     
     override func viewDidLoad() {
