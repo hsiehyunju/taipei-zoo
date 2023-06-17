@@ -22,6 +22,7 @@
 		AE73FAD62A3C83B100D98446 /* AreaModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE73FAD22A3C83B100D98446 /* AreaModel.swift */; };
 		AE73FAD82A3C83B600D98446 /* TaipeiZooService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE73FAD72A3C83B600D98446 /* TaipeiZooService.swift */; };
 		AE73FADC2A3C92B600D98446 /* AreaViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE73FADB2A3C92B600D98446 /* AreaViewModel.swift */; };
+		C11A8D7E2A3D9E7B0014AF8C /* AreaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11A8D7D2A3D9E7B0014AF8C /* AreaTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		AE73FAD22A3C83B100D98446 /* AreaModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AreaModel.swift; sourceTree = "<group>"; };
 		AE73FAD72A3C83B600D98446 /* TaipeiZooService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaipeiZooService.swift; sourceTree = "<group>"; };
 		AE73FADB2A3C92B600D98446 /* AreaViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AreaViewModel.swift; sourceTree = "<group>"; };
+		C11A8D7D2A3D9E7B0014AF8C /* AreaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AreaTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 				AE73FAB62A3C80D600D98446 /* LaunchScreen.storyboard */,
 				AE73FAB92A3C80D600D98446 /* Info.plist */,
 				AE73FACA2A3C81CE00D98446 /* ZooDataModel.xcdatamodeld */,
+				C11A8D7D2A3D9E7B0014AF8C /* AreaTableViewCell.swift */,
 			);
 			path = "taipei-zoo";
 			sourceTree = "<group>";
@@ -272,6 +275,7 @@
 				AE73FAD82A3C83B600D98446 /* TaipeiZooService.swift in Sources */,
 				AE73FAD62A3C83B100D98446 /* AreaModel.swift in Sources */,
 				AE73FAAC2A3C80D500D98446 /* AppDelegate.swift in Sources */,
+				C11A8D7E2A3D9E7B0014AF8C /* AreaTableViewCell.swift in Sources */,
 				AE73FAD32A3C83B100D98446 /* AreaResultModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
