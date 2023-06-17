@@ -10,6 +10,7 @@ import UIKit
 class AreaTableViewCell: UITableViewCell {
 
     @IBOutlet var areaName: UILabel!
+    @IBOutlet weak var areaImage: UIImageView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -21,5 +22,4 @@ class AreaTableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
-
 }
