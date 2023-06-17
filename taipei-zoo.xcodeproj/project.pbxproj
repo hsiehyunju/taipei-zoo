@@ -23,6 +23,7 @@
 		AE73FAD82A3C83B600D98446 /* TaipeiZooService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE73FAD72A3C83B600D98446 /* TaipeiZooService.swift */; };
 		AE73FADC2A3C92B600D98446 /* AreaViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE73FADB2A3C92B600D98446 /* AreaViewModel.swift */; };
 		AE73FADE2A3DDD6D00D98446 /* AreaInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE73FADD2A3DDD6D00D98446 /* AreaInfoViewController.swift */; };
+		AE73FAE02A3DDDD300D98446 /* AreaInfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE73FADF2A3DDDD300D98446 /* AreaInfoViewModel.swift */; };
 		AE73FAE22A3DDEC000D98446 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE73FAE12A3DDEC000D98446 /* BaseViewModel.swift */; };
 		AE73FAE42A3DECE500D98446 /* PlantUIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE73FAE32A3DECE500D98446 /* PlantUIModel.swift */; };
 		C11A8D822A3DA5590014AF8C /* AreaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11A8D812A3DA5590014AF8C /* AreaTableViewCell.swift */; };
@@ -49,6 +50,7 @@
 		AE73FAD72A3C83B600D98446 /* TaipeiZooService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaipeiZooService.swift; sourceTree = "<group>"; };
 		AE73FADB2A3C92B600D98446 /* AreaViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AreaViewModel.swift; sourceTree = "<group>"; };
 		AE73FADD2A3DDD6D00D98446 /* AreaInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AreaInfoViewController.swift; sourceTree = "<group>"; };
+		AE73FADF2A3DDDD300D98446 /* AreaInfoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AreaInfoViewModel.swift; sourceTree = "<group>"; };
 		AE73FAE12A3DDEC000D98446 /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
 		AE73FAE32A3DECE500D98446 /* PlantUIModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantUIModel.swift; sourceTree = "<group>"; };
 		C11A8D812A3DA5590014AF8C /* AreaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AreaTableViewCell.swift; sourceTree = "<group>"; };
@@ -145,6 +147,7 @@
 			isa = PBXGroup;
 			children = (
 				AE73FADB2A3C92B600D98446 /* AreaViewModel.swift */,
+				AE73FADF2A3DDDD300D98446 /* AreaInfoViewModel.swift */,
 				AE73FAE12A3DDEC000D98446 /* BaseViewModel.swift */,
 			);
 			path = ViewModel;
@@ -293,6 +296,7 @@
 				AE73FADE2A3DDD6D00D98446 /* AreaInfoViewController.swift in Sources */,
 				AE73FAD52A3C83B100D98446 /* PlantResultModel.swift in Sources */,
 				AE73FAC02A3C813700D98446 /* AppCoordinator.swift in Sources */,
+				AE73FAE02A3DDDD300D98446 /* AreaInfoViewModel.swift in Sources */,
 				AE73FAB02A3C80D500D98446 /* AreaViewController.swift in Sources */,
 				AE73FAD42A3C83B100D98446 /* PlantModel.swift in Sources */,
 				AE73FAC62A3C815400D98446 /* CoreDataManager.swift in Sources */,
