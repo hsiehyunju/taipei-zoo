@@ -3,7 +3,7 @@
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -17,20 +17,51 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="f43-52-Zxq">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="AQi-v3-cFs">
                                 <rect key="frame" x="0.0" y="12.666666666666686" width="393" height="852"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="AreaTableViewCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="AreaTableViewCell" id="X5e-wM-taK" userLabel="AreaTableViewCell" customClass="AreaTableViewCell" customModule="taipei_zoo">
+                                        <rect key="frame" x="0.0" y="50" width="393" height="41"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="X5e-wM-taK" id="b6G-I2-Up2">
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="41"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="areaName" text="name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Btu-Vz-Anh" userLabel="areaName">
+                                                    <rect key="frame" x="20" y="10.333333333333334" width="393" height="20.333333333333329"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Btu-Vz-Anh" firstAttribute="width" secondItem="b6G-I2-Up2" secondAttribute="width" id="4O9-1B-Nlb"/>
+                                                <constraint firstItem="Btu-Vz-Anh" firstAttribute="leading" secondItem="b6G-I2-Up2" secondAttribute="leading" constant="20" symbolic="YES" id="7TR-wX-6TU"/>
+                                                <constraint firstItem="Btu-Vz-Anh" firstAttribute="height" secondItem="b6G-I2-Up2" secondAttribute="height" multiplier="0.5" id="VsL-7g-4iK"/>
+                                                <constraint firstItem="Btu-Vz-Anh" firstAttribute="centerY" secondItem="b6G-I2-Up2" secondAttribute="centerY" id="g9D-a6-b81"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="areaName" destination="Btu-Vz-Anh" id="dCf-4j-var"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="5g2-c7-teR"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="f43-52-Zxq" firstAttribute="centerY" secondItem="5g2-c7-teR" secondAttribute="centerY" id="GeK-hB-98j"/>
-                            <constraint firstItem="f43-52-Zxq" firstAttribute="height" secondItem="SfB-ni-NRj" secondAttribute="height" id="TiB-Xv-nTl"/>
-                            <constraint firstItem="f43-52-Zxq" firstAttribute="centerX" secondItem="5g2-c7-teR" secondAttribute="centerX" id="XJO-en-Wvy"/>
-                            <constraint firstItem="f43-52-Zxq" firstAttribute="width" secondItem="SfB-ni-NRj" secondAttribute="width" id="mkD-dH-No3"/>
+                            <constraint firstItem="AQi-v3-cFs" firstAttribute="centerX" secondItem="5g2-c7-teR" secondAttribute="centerX" id="3QR-RK-O5F"/>
+                            <constraint firstItem="AQi-v3-cFs" firstAttribute="width" secondItem="SfB-ni-NRj" secondAttribute="width" id="7BJ-vR-hfO"/>
+                            <constraint firstItem="AQi-v3-cFs" firstAttribute="centerY" secondItem="5g2-c7-teR" secondAttribute="centerY" id="ILl-o0-zr9"/>
+                            <constraint firstItem="AQi-v3-cFs" firstAttribute="height" secondItem="SfB-ni-NRj" secondAttribute="height" id="M95-v0-TOT"/>
+                            <constraint firstItem="AQi-v3-cFs" firstAttribute="centerY" secondItem="5g2-c7-teR" secondAttribute="centerY" id="b41-V2-o6U"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="areaTableView" destination="AQi-v3-cFs" id="Snk-zr-ock"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KdL-TR-CKh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
