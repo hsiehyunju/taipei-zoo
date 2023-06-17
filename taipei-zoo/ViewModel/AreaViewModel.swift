@@ -20,18 +20,17 @@ class AreaViewModel: NSObject {
     override init() {
         super.init()
         
-        self.fetchData()
-        
         // 註冊資料更新
         CoreDataManager.shared.fetchedAreaResultsController.delegate = self
         dataChangesSubject
             .subscribe(onNext: {
+                print("資料更新")
                 self.fetchData()
             })
             .disposed(by: disposeBag)
     }
     
-    private func fetchData() {
+    func fetchData() {
         if let areaArray = CoreDataManager.shared.fetchAllData(entityType: AreaEntity.self) {
             var array = [AreaModel]()
             for area in areaArray {
