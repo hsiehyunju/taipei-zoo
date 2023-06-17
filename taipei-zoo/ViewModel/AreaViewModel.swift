@@ -39,6 +39,10 @@ class AreaViewModel: BaseViewModel {
             items.onCompleted()
         }
     }
+    
+    func goAreaInfoPage(data: AreaModel) {
+        self.coordinator?.toAreaInfoPage(data: data)
+    }
 }
 
 extension AreaViewModel: NSFetchedResultsControllerDelegate {
