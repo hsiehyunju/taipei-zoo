@@ -11,7 +11,6 @@ import RxCocoa
 
 class AreaViewController: UIViewController {
     
-    
     @IBOutlet var areaTableView: UITableView!
     
     private var viewModel = AreaViewModel()
@@ -39,7 +38,9 @@ class AreaViewController: UIViewController {
             
             let imageObservable = URLSession.shared.rx.data(request: URLRequest(url: imageURL))
                         .map { data -> UIImage? in
-                            return UIImage(data: data)
+                            var image = UIImage(data: data)
+                            image = image?.resize(to: CGSize(width: cell.areaImage.bounds.width, height: cell.areaImage.bounds.height))
+                            return image
                         }
                         .observe(on: MainScheduler.instance) // 確保更新UI的程式碼在主線程運行
 
@@ -48,26 +49,19 @@ class AreaViewController: UIViewController {
                 .bind(to: cell.areaImage.rx.image)
                 .disposed(by: self.disposeBag)
             
-/*
-            let task = URLSession.shared.dataTask(with: url) { (data, response, error) in
-                if let error = error {
-                    print("Error downloading image: \(error.localizedDescription)")
-                    return
-                }
-                
-                if let data = data, let image = UIImage(data: data) {
-                    DispatchQueue.main.async {
-                        cell.areaImage.image = image
-                    }
-                }
-            }
-
-            task.resume()
-             
-*/
-            
         }.disposed(by: disposeBag)
     }
 }
 
 extension AreaViewController: UITableViewDelegate {}
+
+extension UIImage {
+    func resize(to size: CGSize) -> UIImage? {
+        UIGraphicsBeginImageContextWithOptions(size, false, 0.0)
+        defer { UIGraphicsEndImageContext() }
+        
+        self.draw(in: CGRect(origin: .zero, size: size))
+        
+        return UIGraphicsGetImageFromCurrentImageContext()
+    }
+}
