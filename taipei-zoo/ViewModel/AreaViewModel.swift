@@ -8,12 +8,30 @@
 import Foundation
 import RxSwift
 import RxCocoa
+import CoreData
 
-class AreaViewModel {
+class AreaViewModel: NSObject {
     
+    private var disposeBag = DisposeBag()
+    
+    let dataChangesSubject = PublishSubject<Void>()
     var items = PublishSubject<[AreaModel]>()
     
-    func fetchData() {
+    override init() {
+        super.init()
+        
+        self.fetchData()
+        
+        // 註冊資料更新
+        CoreDataManager.shared.fetchedAreaResultsController.delegate = self
+        dataChangesSubject
+            .subscribe(onNext: {
+                self.fetchData()
+            })
+            .disposed(by: disposeBag)
+    }
+    
+    private func fetchData() {
         if let areaArray = CoreDataManager.shared.fetchAllData(entityType: AreaEntity.self) {
             var array = [AreaModel]()
             for area in areaArray {
@@ -23,5 +41,11 @@ class AreaViewModel {
             items.onNext(array)
             items.onCompleted()
         }
+    }
+}
+
+extension AreaViewModel: NSFetchedResultsControllerDelegate {
+    func controllerDidChangeContent(_ controller: NSFetchedResultsController<NSFetchRequestResult>) {
+        dataChangesSubject.onNext(())
     }
 }
