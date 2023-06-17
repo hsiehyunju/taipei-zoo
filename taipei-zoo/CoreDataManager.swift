@@ -122,4 +122,25 @@ class CoreDataManager {
             return nil
         }
     }
+    
+    lazy var fetchedAreaResultsController: NSFetchedResultsController<AreaEntity> = {
+        let request: NSFetchRequest<AreaEntity> = AreaEntity.fetchRequest()
+        let sortDescriptor = NSSortDescriptor(key: "no", ascending: true)
+        request.sortDescriptors = [sortDescriptor]
+        
+        let fetchedResultsController = NSFetchedResultsController(fetchRequest: request,
+                                                                  managedObjectContext:CoreDataManager.shared.persistentContainer.viewContext,
+                                                                  sectionNameKeyPath: nil,
+                                                                  cacheName: nil)
+        return fetchedResultsController
+    }()
+    
+    lazy var fetchedPlantResultsController: NSFetchedResultsController<PlantEntity> = {
+        let request: NSFetchRequest<PlantEntity> = PlantEntity.fetchRequest()
+        let fetchedResultsController = NSFetchedResultsController(fetchRequest: request,
+                                                                  managedObjectContext:CoreDataManager.shared.persistentContainer.viewContext,
+                                                                  sectionNameKeyPath: nil,
+                                                                  cacheName: nil)
+        return fetchedResultsController
+    }()
 }
