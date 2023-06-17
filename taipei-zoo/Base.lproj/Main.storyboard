@@ -80,6 +80,21 @@
             </objects>
             <point key="canvasLocation" x="-385" y="-90"/>
         </scene>
+        <!--Area Info View Controller-->
+        <scene sceneID="59q-34-MhY">
+            <objects>
+                <viewController storyboardIdentifier="AreaInfoViewController" id="Hhc-j4-o2N" customClass="AreaInfoViewController" customModule="taipei_zoo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Wix-R4-IVm">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="bl9-cl-qAd"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="k6v-vG-3qe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-815" y="-767"/>
+        </scene>
     </scenes>
     <resources>
         <systemColor name="systemBackgroundColor">
