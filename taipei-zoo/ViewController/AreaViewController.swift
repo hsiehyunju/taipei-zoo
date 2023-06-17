@@ -50,6 +50,12 @@ class AreaViewController: UIViewController {
                 .disposed(by: self.disposeBag)
             
         }.disposed(by: disposeBag)
+        
+        areaTableView.rx.itemSelected
+            .subscribe(onNext: { indexPath in
+                print("你點了第\(indexPath)行")
+            })
+            .disposed(by: self.disposeBag)
     }
 }
 
