@@ -10,6 +10,7 @@
         <attribute name="url" optional="YES" attributeType="String"/>
     </entity>
     <entity name="PlantEntity" representedClassName="PlantEntity" syncable="YES" codeGenerationType="class">
+        <attribute name="location" optional="YES" attributeType="String"/>
         <attribute name="name" optional="YES" attributeType="String"/>
         <attribute name="nid" optional="YES" attributeType="String"/>
     </entity>

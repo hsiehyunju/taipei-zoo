@@ -81,6 +81,7 @@ class CoreDataManager {
                         let plantEntity = PlantEntity(context: context)
                         plantEntity.nid = String(plant.id)
                         plantEntity.name = plant.fNameCh
+                        plantEntity.location = plant.fLocation
                     }
                 } catch let error {
                     fatalError("無法檢查或儲存資料：\(error)")
