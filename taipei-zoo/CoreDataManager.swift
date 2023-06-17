@@ -94,4 +94,32 @@ class CoreDataManager {
             }
         }
     }
+    
+    func fetchAllData<T: NSManagedObject>(entityType: T.Type) -> [T]? {
+        
+        let fetchRequest = NSFetchRequest<T>(entityName: String(describing: entityType))
+        
+        do {
+            let result = try persistentContainer.viewContext.fetch(fetchRequest)
+            return result
+        } catch {
+            print("獲取資料失敗\(error)")
+            return nil
+        }
+    }
+    
+    func fetchDataWithPredicate<T: NSManagedObject>(entityType: T.Type, predicate: NSPredicate) -> [T]? {
+        
+        let context = persistentContainer.viewContext
+        let fetchRequest = NSFetchRequest<T>(entityName: String(describing: entityType))
+        fetchRequest.predicate = predicate
+        
+        do {
+            let result = try persistentContainer.viewContext.fetch(fetchRequest)
+            return result
+        } catch {
+            print("獲取資料失敗\(error)")
+            return nil
+        }
+    }
 }
