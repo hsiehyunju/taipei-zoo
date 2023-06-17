@@ -11,5 +11,6 @@ import RxCocoa
 import CoreData
 
 class BaseViewModel: NSObject {
+    open var coordinator: AppCoordinator?
     public var disposeBag = DisposeBag()
 }
