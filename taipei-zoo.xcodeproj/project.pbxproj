@@ -89,6 +89,7 @@
 		AE73FAAA2A3C80D500D98446 /* taipei-zoo */ = {
 			isa = PBXGroup;
 			children = (
+				C11A8D7F2A3DA17F0014AF8C /* View */,
 				AE73FADA2A3C92A900D98446 /* ViewModel */,
 				AE73FAD92A3C905900D98446 /* ViewController */,
 				AE73FACE2A3C839600D98446 /* Services */,
@@ -101,7 +102,6 @@
 				AE73FAB62A3C80D600D98446 /* LaunchScreen.storyboard */,
 				AE73FAB92A3C80D600D98446 /* Info.plist */,
 				AE73FACA2A3C81CE00D98446 /* ZooDataModel.xcdatamodeld */,
-				C11A8D7D2A3D9E7B0014AF8C /* AreaTableViewCell.swift */,
 			);
 			path = "taipei-zoo";
 			sourceTree = "<group>";
@@ -139,6 +139,22 @@
 				AE73FADB2A3C92B600D98446 /* AreaViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		C11A8D7F2A3DA17F0014AF8C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C11A8D802A3DA1830014AF8C /* TableViewCell */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C11A8D802A3DA1830014AF8C /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				C11A8D7D2A3D9E7B0014AF8C /* AreaTableViewCell.swift */,
+			);
+			path = TableViewCell;
 			sourceTree = "<group>";
 		};
 		DA2BF9E0E53C28006DE834A6 /* Pods */ = {
