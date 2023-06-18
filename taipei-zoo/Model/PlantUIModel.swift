@@ -10,4 +10,6 @@ import Foundation
 struct PlantUIModel {
     let no: String
     let name: String
+    let location: String
+    let picURL: String
 }

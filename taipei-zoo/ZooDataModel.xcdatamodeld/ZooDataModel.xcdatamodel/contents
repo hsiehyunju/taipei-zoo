@@ -13,5 +13,6 @@
         <attribute name="location" optional="YES" attributeType="String"/>
         <attribute name="name" optional="YES" attributeType="String"/>
         <attribute name="nid" optional="YES" attributeType="String"/>
+        <attribute name="picURL" optional="YES" attributeType="String"/>
     </entity>
 </model>
