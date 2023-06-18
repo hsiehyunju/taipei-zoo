@@ -29,31 +29,15 @@ class AreaViewController: UIViewController {
         viewModel.items.bind(
             to: areaTableView.rx.items(
                 cellIdentifier: "AreaTableViewCell", cellType: AreaTableViewCell.self)
-        ) { row, model, cell in
-            
-            cell.areaName?.text = model.name
-            
-            let url = model.picURL.replacingOccurrences(of: "http", with: "https")
-            guard let imageURL = URL(string: url) else { return }
-            
-            let imageObservable = URLSession.shared.rx.data(request: URLRequest(url: imageURL))
-                        .map { data -> UIImage? in
-                            var image = UIImage(data: data)
-                            image = image?.resize(to: CGSize(width: cell.areaImage.bounds.width, height: cell.areaImage.bounds.height))
-                            return image
-                        }
-                        .observe(on: MainScheduler.instance) // 確保更新UI的程式碼在主線程運行
-
-                    // 將下載的圖片綁定到imageView
-                    imageObservable
-                .bind(to: cell.areaImage.rx.image)
-                .disposed(by: self.disposeBag)
-            
+        ) { _, model, cell in
+            cell.areaModel = model
+            cell.setupUI()
         }.disposed(by: disposeBag)
         
         areaTableView.rx.itemSelected
             .subscribe(onNext: { indexPath in
-                print("你點了第\(indexPath)行")
+                let cell = self.areaTableView.cellForRow(at: indexPath) as! AreaTableViewCell
+                self.viewModel.goAreaInfoPage(data: cell.areaModel!)
             })
             .disposed(by: self.disposeBag)
     }
