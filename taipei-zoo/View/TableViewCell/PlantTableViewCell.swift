@@ -33,15 +33,20 @@ class PlantTableViewCell: UITableViewCell {
         guard let imageURL = URL(string: url) else { return }
         
         let imageObservable = URLSession.shared.rx.data(request: URLRequest(url: imageURL))
-                    .map { data -> UIImage? in
-                        var image = UIImage(data: data)
-                        image = image?.resize(to: CGSize(width: self.plantImageView.bounds.width, height: self.plantImageView.bounds.height))
-                        return image
-                    }
-                    .observe(on: MainScheduler.instance) // 確保更新UI的程式碼在主線程運行
+            .flatMap { data -> Observable<UIImage?> in
+                var image: UIImage?
+                image = UIImage(data: data)
+                image = image?.resize(to: CGSize(width: self.plantImageView.bounds.width, height: self.plantImageView.bounds.height))
+                return .just(image)
+            }
+            .observe(on: MainScheduler.instance)
+            .catch { error -> Observable<UIImage?> in
+                print("Image download error: \(error)")
+                return .just(UIImage(systemName: "photo.fill"))
+            }
 
-                // 將下載的圖片綁定到imageView
-                imageObservable
+        // 將下載的圖片綁定到imageView
+        imageObservable
             .bind(to: plantImageView.rx.image)
             .disposed(by: disposeBag)
     }
