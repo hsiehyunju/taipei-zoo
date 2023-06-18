@@ -8,20 +8,34 @@
 import UIKit
 import RxSwift
 import RxCocoa
+import Stevia
 
 class AreaTableViewCell: UITableViewCell {
-
-    @IBOutlet var areaName: UILabel!
-    @IBOutlet weak var areaImage: UIImageView!
     
+    private let areaName = UILabel()
+    private let areaImage = UIImageView()
     private let disposeBag = DisposeBag()
+    
     var areaModel: AreaModel?
     
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
     }
-
+    
+    override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
+        super.init(style: style, reuseIdentifier: reuseIdentifier)
+        
+        // 新增 label、image view 到 TableView ContentView 內
+        self.contentView.subviews(areaName, areaImage)
+        areaName.centerVertically().left(0).width(80%)
+        areaImage.centerVertically().right(0).height(100%).width(20%)
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
     }

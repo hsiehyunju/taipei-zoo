@@ -16,65 +16,9 @@
                     <view key="view" contentMode="scaleToFill" id="SfB-ni-NRj">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="AQi-v3-cFs">
-                                <rect key="frame" x="0.0" y="12.666666666666686" width="393" height="852"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="AreaTableViewCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="AreaTableViewCell" rowHeight="30" id="X5e-wM-taK" userLabel="AreaTableViewCell" customClass="AreaTableViewCell" customModule="taipei_zoo" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="50" width="393" height="30"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="X5e-wM-taK" id="b6G-I2-Up2">
-                                            <rect key="frame" x="0.0" y="0.0" width="393" height="30"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="areaName" text="name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Btu-Vz-Anh" userLabel="areaName">
-                                                    <rect key="frame" x="20" y="7.6666666666666679" width="314.33333333333331" height="15"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="imgaeName" translatesAutoresizingMaskIntoConstraints="NO" id="Sd1-yz-m9a" userLabel="imgaeName">
-                                                    <rect key="frame" x="351.66666666666669" y="-0.66666666666666607" width="41.333333333333314" height="31.333333333333329"/>
-                                                    <accessibility key="accessibilityConfiguration">
-                                                        <bool key="isElement" value="YES"/>
-                                                    </accessibility>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" secondItem="Sd1-yz-m9a" secondAttribute="height" multiplier="4:3" id="dYy-fc-Wbg"/>
-                                                    </constraints>
-                                                </imageView>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstItem="Btu-Vz-Anh" firstAttribute="width" secondItem="b6G-I2-Up2" secondAttribute="width" multiplier="0.8" id="4O9-1B-Nlb"/>
-                                                <constraint firstItem="Btu-Vz-Anh" firstAttribute="leading" secondItem="b6G-I2-Up2" secondAttribute="leading" constant="20" symbolic="YES" id="7TR-wX-6TU"/>
-                                                <constraint firstItem="Btu-Vz-Anh" firstAttribute="height" secondItem="b6G-I2-Up2" secondAttribute="height" multiplier="0.5" id="VsL-7g-4iK"/>
-                                                <constraint firstAttribute="trailing" secondItem="Sd1-yz-m9a" secondAttribute="trailing" id="dda-9P-Beh"/>
-                                                <constraint firstItem="Btu-Vz-Anh" firstAttribute="centerY" secondItem="b6G-I2-Up2" secondAttribute="centerY" id="g9D-a6-b81"/>
-                                                <constraint firstItem="Sd1-yz-m9a" firstAttribute="height" secondItem="b6G-I2-Up2" secondAttribute="height" constant="1" id="meO-Bq-nVA"/>
-                                                <constraint firstItem="Sd1-yz-m9a" firstAttribute="centerY" secondItem="b6G-I2-Up2" secondAttribute="centerY" id="y5G-L7-ikI"/>
-                                            </constraints>
-                                        </tableViewCellContentView>
-                                        <connections>
-                                            <outlet property="areaImage" destination="Sd1-yz-m9a" id="OCX-v0-fia"/>
-                                            <outlet property="areaName" destination="Btu-Vz-Anh" id="KWr-i6-2Nq"/>
-                                        </connections>
-                                    </tableViewCell>
-                                </prototypes>
-                            </tableView>
-                        </subviews>
                         <viewLayoutGuide key="safeArea" id="5g2-c7-teR"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="AQi-v3-cFs" firstAttribute="centerX" secondItem="5g2-c7-teR" secondAttribute="centerX" id="3QR-RK-O5F"/>
-                            <constraint firstItem="AQi-v3-cFs" firstAttribute="width" secondItem="SfB-ni-NRj" secondAttribute="width" id="7BJ-vR-hfO"/>
-                            <constraint firstItem="AQi-v3-cFs" firstAttribute="centerY" secondItem="5g2-c7-teR" secondAttribute="centerY" id="ILl-o0-zr9"/>
-                            <constraint firstItem="AQi-v3-cFs" firstAttribute="height" secondItem="SfB-ni-NRj" secondAttribute="height" id="M95-v0-TOT"/>
-                            <constraint firstItem="AQi-v3-cFs" firstAttribute="centerY" secondItem="5g2-c7-teR" secondAttribute="centerY" id="b41-V2-o6U"/>
-                        </constraints>
                     </view>
-                    <connections>
-                        <outlet property="areaTableView" destination="AQi-v3-cFs" id="Snk-zr-ock"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KdL-TR-CKh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

@@ -8,35 +8,38 @@
 import UIKit
 import RxSwift
 import RxCocoa
+import Stevia
 
 class AreaViewController: UIViewController {
     
-    @IBOutlet var areaTableView: UITableView!
+    private var areaView = AreaViewStevia()
     
     var viewModel: AreaViewModel!
     private var disposeBag = DisposeBag()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.subviews(areaView)
+        areaView.centerVertically().centerHorizontally().width(100%).height(100%)
         bindTableData()
         viewModel.fetchData()
     }
     
     func bindTableData() {
         
-        areaTableView.rx.setDelegate(self).disposed(by: disposeBag)
+        areaView.tableView.rx.setDelegate(self).disposed(by: disposeBag)
         
         viewModel.items.bind(
-            to: areaTableView.rx.items(
+            to: areaView.tableView.rx.items(
                 cellIdentifier: "AreaTableViewCell", cellType: AreaTableViewCell.self)
         ) { _, model, cell in
             cell.areaModel = model
             cell.setupUI()
         }.disposed(by: disposeBag)
         
-        areaTableView.rx.itemSelected
+        areaView.tableView.rx.itemSelected
             .subscribe(onNext: { indexPath in
-                let cell = self.areaTableView.cellForRow(at: indexPath) as! AreaTableViewCell
+                let cell = self.areaView.tableView.cellForRow(at: indexPath) as! AreaTableViewCell
                 self.viewModel.goAreaInfoPage(data: cell.areaModel!)
             })
             .disposed(by: self.disposeBag)
