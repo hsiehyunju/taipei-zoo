@@ -20,7 +20,7 @@ class AreaInfoViewModel: BaseViewModel {
     }
     
     func fetchData() {
-        var predicate = NSPredicate(format: "location CONTAINS %@", areaModel.name)
+        let predicate = NSPredicate(format: "location CONTAINS[cd] %@", areaModel.name.replacingOccurrences(of: "區", with: ""))
         if let plantArray = CoreDataManager.shared.fetchDataWithPredicate(entityType: PlantEntity.self, predicate: predicate) {
             
             var array = [PlantUIModel]()
