@@ -25,12 +25,25 @@ class AreaInfoViewModel: BaseViewModel {
             
             var array = [PlantUIModel]()
             for plant in plantArray {
-                let model = PlantUIModel(no: plant.nid!, name: plant.name!)
+                let model = PlantUIModel(no: plant.nid!, name: plant.name!, location: plant.location!, picURL: plant.picURL!)
                 array.append(model)
             }
             
             plantModelArray.onNext(array)
             plantModelArray.onCompleted()
         }
+    }
+    
+    func getName() -> String {
+        return areaModel.name
+    }
+    
+    func getImageURL() -> URL {
+        let urlString = areaModel.picURL.replacingOccurrences(of: "http", with: "https")
+        return URL(string: urlString)!
+    }
+    
+    func getIntro() -> String {
+        return areaModel.info
     }
 }
