@@ -26,6 +26,7 @@
 		AE73FAE02A3DDDD300D98446 /* AreaInfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE73FADF2A3DDDD300D98446 /* AreaInfoViewModel.swift */; };
 		AE73FAE22A3DDEC000D98446 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE73FAE12A3DDEC000D98446 /* BaseViewModel.swift */; };
 		AE73FAE42A3DECE500D98446 /* PlantUIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE73FAE32A3DECE500D98446 /* PlantUIModel.swift */; };
+		AE73FAE82A3EACEA00D98446 /* PlantTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE73FAE72A3EACEA00D98446 /* PlantTableViewCell.swift */; };
 		C11A8D822A3DA5590014AF8C /* AreaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11A8D812A3DA5590014AF8C /* AreaTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
@@ -53,6 +54,7 @@
 		AE73FADF2A3DDDD300D98446 /* AreaInfoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AreaInfoViewModel.swift; sourceTree = "<group>"; };
 		AE73FAE12A3DDEC000D98446 /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
 		AE73FAE32A3DECE500D98446 /* PlantUIModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantUIModel.swift; sourceTree = "<group>"; };
+		AE73FAE72A3EACEA00D98446 /* PlantTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantTableViewCell.swift; sourceTree = "<group>"; };
 		C11A8D812A3DA5590014AF8C /* AreaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AreaTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -165,6 +167,7 @@
 			isa = PBXGroup;
 			children = (
 				C11A8D812A3DA5590014AF8C /* AreaTableViewCell.swift */,
+				AE73FAE72A3EACEA00D98446 /* PlantTableViewCell.swift */,
 			);
 			path = TableViewCell;
 			sourceTree = "<group>";
@@ -293,6 +296,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE73FAE82A3EACEA00D98446 /* PlantTableViewCell.swift in Sources */,
 				AE73FADE2A3DDD6D00D98446 /* AreaInfoViewController.swift in Sources */,
 				AE73FAD52A3C83B100D98446 /* PlantResultModel.swift in Sources */,
 				AE73FAC02A3C813700D98446 /* AppCoordinator.swift in Sources */,
