@@ -165,17 +165,9 @@
 			path = Stevia;
 			sourceTree = "<group>";
 		};
-		AE73FAEC2A3EDB9900D98446 /* TableView */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = TableView;
-			sourceTree = "<group>";
-		};
 		C11A8D7F2A3DA17F0014AF8C /* View */ = {
 			isa = PBXGroup;
 			children = (
-				AE73FAEC2A3EDB9900D98446 /* TableView */,
 				AE73FAE92A3EDAD800D98446 /* Stevia */,
 				C11A8D802A3DA1830014AF8C /* TableViewCell */,
 			);
